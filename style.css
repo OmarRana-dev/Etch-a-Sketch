@@ -1,0 +1,85 @@
+.board {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    border: 2px solid cadetblue;
+    /* margin-bottom: 20px; */
+    border-radius: 5px;
+}
+.board div {
+    border-radius: 5px;
+    border: 1px solid #ddd8d88f;
+    
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    color:darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+button {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 6px 16px;
+}
+
+.buttons {
+    /* background-color: aquamarine; */
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* input {
+    width: 50px;
+    font-size: 16px;
+    padding: 3px 0px;
+} */
+
+.inputSection {
+    background-color: cadetblue;
+    padding: 20px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+    width: 110px;
+
+}
+.enter-btn {
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+input, .enter-btn {
+    border: none;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}

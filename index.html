@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title"><h1>SketchPad</h1></div>
+      <div class="mode">Mode: Coloring</div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+          <button onclick="changeColor('cornflowerblue')">Black</button>
+          <button onclick="changeColor('grey')">Grey</button>
+          <button onclick="changeColor('random')">Random</button>
+          <button onclick="changeColor('white')">Eraser</button>
+          <button onclick="resetBoard()">Reset</button>
+        </div>
+        <div class="inputSection">
+          <input 
+            type="text"
+            placeholder="Size of Board"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button class="enter-btn">Enter</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
